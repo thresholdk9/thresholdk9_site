@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="{{robots}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{name}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{url}}/assets/img/og.jpg">
+  <meta name="theme-color" content="#0b0612">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="{{name}} home">
+        <img src="/assets/img/logo-horizontal.png" alt="{{name}}: {{tagline}}" width="486" height="220">
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="/services/"{{nav:/services/}}>Services</a></li>
+          <li><a href="/about/"{{nav:/about/}}>About</a></li>
+          <li><a href="/contact/"{{nav:/contact/}}>Contact</a></li>
+          <li><a class="btn btn-small" href="{{bookUrl}}">Book an Evaluation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+{{content}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">{{name}}</p>
+        <p>{{tagline}}</p>
+        <p>In-home behavior and service dog training.<br>{{serviceArea}}.</p>
+      </div>
+      <div>
+        <p class="footer-head">Reach Stevie</p>
+        <p><a href="mailto:{{email}}">{{email}}</a></p>
+        {{#if phone}}<p><a href="tel:{{phoneHref}}">{{phone}}</a></p>{{/if}}
+        <p>Text and video support {{supportHours}}</p>
+      </div>
+      <div>
+        <p class="footer-head">Explore</p>
+        <p><a href="/services/">Services &amp; pricing</a></p>
+        <p><a href="/about/">Meet your alchemist</a></p>
+        <p><a href="/contact/">Contact</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>&copy; {{year}} {{legalName}}. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

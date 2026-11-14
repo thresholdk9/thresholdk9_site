@@ -1,0 +1,8 @@
+{
+  "name": "thresholdk9-site",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "preview": "node build.js && npx --yes serve dist"
+  }
+}

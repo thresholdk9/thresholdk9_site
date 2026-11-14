@@ -1,0 +1,22 @@
+{
+  "_readme": "Single source of truth for facts that appear across the site. Change a value here, run `node build.js`, and every page updates. Leave phone empty to hide it.",
+  "name": "Threshold K9",
+  "legalName": "Threshold K9 LLC",
+  "tagline": "Training. Behavior. Transformation.",
+  "url": "https://thresholdk9training.com",
+  "email": "thresholdk9llc@gmail.com",
+  "phone": "",
+  "city": "Longmont, Colorado",
+  "serviceArea": "Longmont, Loveland, Boulder and surrounding Northern Colorado",
+  "supportHours": "10:00am – 6:00pm",
+  "indexable": false,
+  "bookUrl": "/contact/",
+  "evalPrice": "$275",
+  "evalMinutes": "90",
+  "pack6Price": "$1,500",
+  "pack12Price": "$2,850",
+  "pack12Savings": "$150",
+  "ascensionPrice": "$750",
+  "ascensionSessions": "three",
+  "ascensionTermMonths": "12"
+}

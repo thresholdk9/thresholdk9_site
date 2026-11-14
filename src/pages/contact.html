@@ -1,0 +1,52 @@
+<!-- {"path":"/contact/","title":"Contact | Threshold K9","description":"Ask a question or request a Threshold Evaluation. In-home dog behavior and service dog training in Longmont and Northern Colorado."} -->
+<section class="glow">
+  <div class="wrap split top">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h1>Tell me what you are surviving.</h1>
+      <p class="lede">Are you standing at the edge of overwhelm, or seeking the Ascension Track? Either way, this is where it starts.</p>
+      <p>Send a message and I will reply personally, usually within 24 hours.</p>
+      <p class="muted">
+        <a href="mailto:{{email}}">{{email}}</a><br>
+        {{#if phone}}<a href="tel:{{phoneHref}}">{{phone}}</a><br>{{/if}}
+        Support hours {{supportHours}}<br>
+        Serving {{serviceArea}}
+      </p>
+    </div>
+
+    <form id="contact-form" data-email="{{email}}">
+      <div>
+        <label for="name">The Handler <small>Your first and last name</small></label>
+        <input id="name" name="name" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="email">The Frequency <small>Your email address</small></label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div>
+        <label for="dog">The Dog <small>Name, breed and age</small></label>
+        <input id="dog" name="dog" required>
+      </div>
+      <div>
+        <label for="message">The Current Reality <small>Tell me exactly what you are surviving right now.</small></label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button class="btn" type="submit">Send Transmission</button>
+      <p class="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Temporary: opens the visitor's own email app with the message filled in.
+  // Replaced by a real send-and-store endpoint when the booking backend goes in.
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var body = 'Handler: ' + f.name.value + '\nEmail: ' + f.email.value + '\nDog: ' + f.dog.value + '\n\n' + f.message.value;
+    window.location.href = 'mailto:' + f.dataset.email +
+      '?subject=' + encodeURIComponent('Threshold K9 inquiry from ' + f.name.value) +
+      '&body=' + encodeURIComponent(body);
+    f.querySelector('.form-status').textContent = 'Your email app should open with your message ready to send.';
+  });
+</script>
