@@ -16,7 +16,7 @@
   "pack6Price": "$1,500",
   "pack12Price": "$2,850",
     "ascensionPrice": "$750",
-  "ascensionSessions": "four",
-  "ascensionSessionsCap": "Four",
+  "ascensionSessions": "three",
+  "ascensionSessionsCap": "Three",
   "ascensionTermMonths": "12"
 }
