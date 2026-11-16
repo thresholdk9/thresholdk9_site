@@ -135,7 +135,7 @@ section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 .steps p { font-size: 0.97rem; color: var(--lilac); margin: 0; }
 
 /* Service blocks */
-.service { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); padding-block: 3.5rem; border-top: 1px solid var(--line); scroll-margin-top: 1rem; }
+.service { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); padding-block: 3.5rem; border-top: 1px solid var(--line); scroll-margin-top: 1rem; }
 .service:first-of-type { border-top: 0; }
 .service-art img { width: 100%; border: 1px solid var(--line); }
 .price { margin: 1.2rem 0 0; padding: 1.2rem; border: 1px solid var(--line); background: var(--shadow); }
@@ -146,6 +146,16 @@ section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 .includes li { padding: 0.9rem 0 0.9rem 1.6rem; border-top: 1px solid var(--line); position: relative; font-size: 0.98rem; color: var(--lilac); }
 .includes li::before { content: "\263E"; position: absolute; left: 0; color: var(--purple); }
 .includes strong { color: #fff; font-weight: 600; }
+.accordion { border: 1px solid var(--line); background: var(--shadow); padding: 0 1.2rem; margin: 1rem 0 1.5rem; }
+.accordion li { padding: 0; border-top: 1px solid var(--line); color: var(--lilac); }
+.accordion li:first-child { border-top: 0; }
+.accordion li::before { content: none; }
+.accordion summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.95rem 0; color: #fff; font-weight: 500; }
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion summary::after { content: ""; flex: none; width: 0.5rem; height: 0.5rem; border-right: 1.5px solid var(--purple); border-bottom: 1.5px solid var(--purple); transform: rotate(45deg) translateY(-25%); transition: transform 0.2s ease; }
+.accordion details[open] summary::after { transform: rotate(-135deg) translateY(-25%); }
+.accordion summary:hover { color: var(--lilac); }
+.accordion details p { margin: 0 0 1rem; font-size: 0.96rem; }
 .note { border-left: 2px solid var(--purple); padding: 0.2rem 0 0.2rem 1rem; color: var(--steel); font-size: 0.93rem; }
 
 .investment { font-weight: 600; color: #fff; margin-bottom: 0.4rem; }
@@ -193,7 +203,7 @@ textarea { min-height: 9rem; resize: vertical; }
   .hero-art { margin-inline: -1.25rem; }
   .hero-art img { max-height: 360px; object-position: 30% 35%; }
   .hero-copy { padding-block: 0.5rem 3rem; }
-  .service-art { max-width: 320px; }
+  .service-art { max-width: 420px; }
   .header-inner { justify-content: center; }
   .brand img { height: 60px; }
   .nav { justify-content: center; gap: 0.3rem 1.2rem; }
