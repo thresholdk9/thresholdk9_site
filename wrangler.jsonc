@@ -1,0 +1,8 @@
+{
+  // Cloudflare Workers static-assets deploy. Build first: `node build.js`, then `npx wrangler deploy`.
+  "name": "thresholdk9-site",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
