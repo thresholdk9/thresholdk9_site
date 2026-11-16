@@ -13,6 +13,16 @@ Static marketing site for Threshold K9 LLC (Stevie Rossi, dog training, Longmont
 - Deploys happen automatically: Cloudflare Workers Builds deploys every push to `main`. Test URL: https://thresholdk9-site.thresholdk9llc.workers.dev
 - The site stays `noindex` until launch (`"indexable": false` in `site.json`).
 
+## Progress against docs/PLAN.md
+
+- [x] Deployed to the free Cloudflare address (`noindex`).
+- [x] 3.6 Contact form: Worker + Resend, verified end to end (Nov 16, 2026). Turnstile is still on Cloudflare's test key; real key at domain time.
+- [x] 3.7 Policy pages drafted (`/policies/`, `/privacy/`). Refund rule is a placeholder pending open decision #1.
+- [x] The 7 Keys page and new photos (Home, About, 7 Keys).
+- [ ] §2 Square setup (Claudia) → then 3.1, 3.3, 3.4, 3.5.
+- [ ] 3.2 Intake + waiver. Sources in Drive "Client Forms-Waivers-Contracts-Etc": Intake Form (DA).pdf, waiver drafts; intake sections I–VI are in the "Website Descriptions" doc in "Website Plan".
+- [ ] §4 Domain + email, then 3.8 launch SEO.
+
 ## Secrets and settings
 
 - Deploys run in **Cloudflare Workers Builds** (Cloudflare pulls from GitHub). There is no GitHub Actions workflow, so GitHub repository secrets are never seen by this site.
