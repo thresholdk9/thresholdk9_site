@@ -184,6 +184,8 @@ input, textarea, select {
   border: 1px solid rgba(212, 195, 229, 0.4); font: inherit; border-radius: 0;
 }
 textarea { min-height: 9rem; resize: vertical; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.cf-turnstile { min-height: 65px; }
 .form-status { color: var(--lilac); min-height: 1.5em; margin: 0; }
 
 .cta { text-align: center; }

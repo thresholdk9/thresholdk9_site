@@ -15,8 +15,10 @@
   "evalMinutes": "90",
   "pack6Price": "$1,500",
   "pack12Price": "$2,850",
-    "ascensionPrice": "$750",
+  "ascensionPrice": "$750",
   "ascensionSessions": "three",
   "ascensionSessionsCap": "Three",
-  "ascensionTermMonths": "12"
+  "ascensionTermMonths": "12",
+  "turnstileSiteKey": "1x00000000000000000000AA",
+  "_turnstile": "turnstileSiteKey is Cloudflare's public TEST key until the real widget exists. Swap it here and add TURNSTILE_SECRET in the Cloudflare dashboard at the same time."
 }

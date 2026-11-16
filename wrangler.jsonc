@@ -1,8 +1,19 @@
 {
-  // Cloudflare Workers static-assets deploy. Build first: `node build.js`, then `npx wrangler deploy`.
+  // Cloudflare Worker with static assets. Build first: `node build.js`, then `npx wrangler deploy`.
+  // Static files in dist/ are served directly; src/worker.js only handles what isn't a file (form endpoints).
   "name": "thresholdk9-site",
+  "main": "src/worker.js",
   "compatibility_date": "2026-11-01",
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  // Non-secret settings. Secrets (RESEND_API_KEY, TURNSTILE_SECRET) are set in the Cloudflare dashboard, never here.
+  "vars": {
+    "MAIL_TO": "thresholdk9llc@gmail.com",
+    // Until the domain is verified in Resend, mail must come from onboarding@resend.dev
+    // and can only go to the Resend account's own address (MAIL_TO above).
+    "MAIL_FROM": "Threshold K9 Website <onboarding@resend.dev>"
+  },
+  "observability": { "enabled": true }
 }
