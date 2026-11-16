@@ -231,7 +231,7 @@ Build in this order. Each item lists what "done" means.
 
 - **One** business number everywhere: site, Square profile, Google Business Profile, business cards.
 - Square's automated texts come from Square's own number. Client replies land in the **Square app → Messages**, not Stevie's phone texting app. Stevie should keep the Square app installed and notifications on.
-- Turn on Square **Do Not Disturb** outside 10am–6pm support hours.
+- ~~Turn on Square Do Not Disturb outside support hours.~~ Not used: in Square, Do Not Disturb is an on/off switch that disables the Text Us button and all new messages, not a schedule. Stevie silences Square notifications on her phone after hours instead.
 - **Test:** book a fake appointment with Claudia's cell, reply to the confirmation, and confirm the reply reaches Stevie's Square Messages and that she can answer it.
 
 ---
