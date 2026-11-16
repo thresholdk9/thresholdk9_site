@@ -15,8 +15,8 @@
   "evalMinutes": "90",
   "pack6Price": "$1,500",
   "pack12Price": "$2,850",
-  "pack12Savings": "$150",
-  "ascensionPrice": "$750",
-  "ascensionSessions": "three",
+    "ascensionPrice": "$750",
+  "ascensionSessions": "four",
+  "ascensionSessionsCap": "Four",
   "ascensionTermMonths": "12"
 }
