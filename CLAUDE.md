@@ -19,7 +19,9 @@ Static marketing site for Threshold K9 LLC (Stevie Rossi, dog training, Longmont
 - [x] 3.6 Contact form: Worker + Resend, verified end to end (Nov 16, 2026). Turnstile is still on Cloudflare's test key; real key at domain time.
 - [x] 3.7 Policy pages drafted (`/policies/`, `/privacy/`). Refunds: none, all sales final (decided Nov 16).
 - [x] The 7 Keys page and new photos (Home, About, 7 Keys).
-- [ ] §2 Square setup (Claudia) → then 3.1, 3.3, 3.4, 3.5.
+- [x] §2 Square API part (Nov 16, via Square connector): services = Threshold Evaluation ($275, 90 min, bookable), Prepaid Evaluation + Package Session (hidden), 60-min buffers; old items archived; 4 payment links in `site.json` → `payLinks`; hours set; 808 phone removed.
+  - At domain launch: update the 4 payment links' `redirect_url` to the real domain (Square checkout `updatePaymentLink`).
+- [ ] §2 dashboard-only part (Claudia): prepayment on Evaluation, availability, booking settings, Text Us, DND, hide address, the two embed codes → then 3.1, 3.3, 3.4, 3.5.
 - [ ] 3.2 Intake + waiver. Sources in Drive "Client Forms-Waivers-Contracts-Etc": Intake Form (DA).pdf, waiver drafts; intake sections I–VI are in the "Website Descriptions" doc in "Website Plan".
 - [ ] §4 Domain + email, then 3.8 launch SEO.
 

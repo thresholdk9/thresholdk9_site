@@ -20,5 +20,12 @@
   "ascensionSessionsCap": "Three",
   "ascensionTermMonths": "12",
   "turnstileSiteKey": "1x00000000000000000000AA",
-  "_turnstile": "turnstileSiteKey is Cloudflare's public TEST key until the real widget exists. Swap it here and add TURNSTILE_SECRET in the Cloudflare dashboard at the same time."
+  "_turnstile": "turnstileSiteKey is Cloudflare's public TEST key until the real widget exists. Swap it here and add TURNSTILE_SECRET in the Cloudflare dashboard at the same time.",
+  "payLinks": {
+    "_note": "Square payment links (Stevie's account). Each redirects to /client-booking/ on the test site; update redirect_url to the real domain at launch.",
+    "eval6": "https://square.link/u/6Br76OFo",
+    "eval12": "https://square.link/u/gNVASNw5",
+    "pack6": "https://square.link/u/xWogSCMq",
+    "pack12": "https://square.link/u/2e1GqpUn"
+  }
 }
