@@ -32,7 +32,7 @@ for (const file of fs.readdirSync('src/pages').filter((f) => f.endsWith('.html')
   const meta = JSON.parse(match[1]);
   const vars = { ...site, ...meta, canonical: site.url + meta.path };
   vars.content = fill(conditionals(raw.slice(match[0].length), vars), vars);
-  for (const p of ['/', '/services/', '/about/', '/contact/']) {
+  for (const p of ['/', '/services/', '/the-7-keys/', '/about/', '/contact/']) {
     vars['nav:' + p] = p === meta.path ? ' aria-current="page"' : '';
   }
   const html = fill(conditionals(layout, vars), vars).replace(/\{\{\s*nav:([^\s}]+)\s*\}\}/g, (m, p) => vars['nav:' + p] || '');
