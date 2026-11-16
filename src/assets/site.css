@@ -206,7 +206,7 @@ textarea { min-height: 9rem; resize: vertical; }
   .brand img { height: 46px; }
   .nav { gap: 0.2rem 1.2rem; }
   .nav .btn-small { padding: 0.5rem 0.9rem; }
-  .hero-art img { max-height: 190px; object-position: 30% 24%; }
+  .hero-art img { max-height: 190px; object-position: 30% 19%; }
   .hero-copy { padding-block: 0.25rem 2.5rem; display: flex; flex-direction: column; }
   .hero-copy > p:not(.eyebrow):not(.lede) { order: 2; margin: 1.6rem 0 0; }
   .hero-copy .eyebrow { font-size: 0.7rem; letter-spacing: 0.12em; margin-bottom: 0.6rem; }
