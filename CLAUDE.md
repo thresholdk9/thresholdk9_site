@@ -17,7 +17,7 @@ Static marketing site for Threshold K9 LLC (Stevie Rossi, dog training, Longmont
 
 - [x] Deployed to the free Cloudflare address (`noindex`).
 - [x] 3.6 Contact form: Worker + Resend, verified end to end (Nov 16, 2026). Turnstile is still on Cloudflare's test key; real key at domain time.
-- [x] 3.7 Policy pages drafted (`/policies/`, `/privacy/`). Refund rule is a placeholder pending open decision #1.
+- [x] 3.7 Policy pages drafted (`/policies/`, `/privacy/`). Refunds: none, all sales final (decided Nov 16).
 - [x] The 7 Keys page and new photos (Home, About, 7 Keys).
 - [ ] §2 Square setup (Claudia) → then 3.1, 3.3, 3.4, 3.5.
 - [ ] 3.2 Intake + waiver. Sources in Drive "Client Forms-Waivers-Contracts-Etc": Intake Form (DA).pdf, waiver drafts; intake sections I–VI are in the "Website Descriptions" doc in "Website Plan".

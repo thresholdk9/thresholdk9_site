@@ -247,7 +247,7 @@ Build in this order. Each item lists what "done" means.
 
 | # | Item | Blocks | Owner |
 |---|---|---|---|
-| 1 | **Bundle refund rule:** what happens to Eval + 6/12 money if the Evaluation shows a poor fit | Selling bundles, Policies page, waiver | S |
+| 1 | ~~**Bundle refund rule**~~ **Decided Nov 16, 2026: no refunds.** All Evaluations, packages and memberships are final sale (matches Square's return policy). | Waiver wording | S |
 | 2 | **Ascension membership agreement** (12-month term, 1x 2-month pause with 2 weeks' notice, max 2 rollover sessions, 30-day cancel notice after term). It doesn't exist yet. | Selling Ascension | C/S |
 | 3 | **Training methodology:** force-free vs. balanced. Waiver Section 10 stays method-neutral until answered. | Waiver wording, About copy | S |
 | 4 | **Phone number:** which one is real and live | Site, Square, cards | C |
