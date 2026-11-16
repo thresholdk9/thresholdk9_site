@@ -43,7 +43,7 @@ ul { padding-left: 1.2em; }
 .skip:focus { left: 1rem; top: 1rem; background: #fff; color: #000; padding: 0.5rem 1rem; z-index: 10; }
 
 .eyebrow {
-  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase;
+  font-size: 0.86rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--purple); margin-bottom: 1rem;
 }
 .lede { font-size: 1.2rem; color: var(--lilac); }
@@ -82,6 +82,7 @@ section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 @media (min-width: 821px) { .hero-art img { -webkit-mask-image: linear-gradient(to right, #000 78%, transparent); mask-image: linear-gradient(to right, #000 78%, transparent); } }
 .hero-copy { padding-block: 3rem; }
 .hero-copy p { max-width: 34rem; }
+.hero-copy .lede { font-family: var(--serif); font-size: clamp(1.4rem, 2.4vw, 1.8rem); line-height: 1.35; color: #fff; margin-bottom: 0.9em; }
 
 /* Portals: three entry points under the hero */
 .portals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
