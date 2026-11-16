@@ -186,6 +186,12 @@ input, textarea, select {
 textarea { min-height: 9rem; resize: vertical; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .cf-turnstile { min-height: 65px; }
+.prose h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); margin-top: 2.2rem; }
+.prose ul { padding-left: 1.2em; }
+.prose li { margin-bottom: 0.5em; }
+.todo { border: 1px dashed var(--purple); padding: 0.8rem 1rem; color: var(--lilac); font-style: italic; }
+.footer-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; }
+.footer-legal a { color: var(--steel); }
 .form-status { color: var(--lilac); min-height: 1.5em; margin: 0; }
 
 .cta { text-align: center; }
